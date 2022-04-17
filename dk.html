@@ -1,0 +1,64 @@
+<h2>Sign in/up Form</h2>
+<link rel="stylesheet" href="./dk.css">
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Đăng ký</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i ><img src="./pic/f.png" alt="" height="25px" width="25px"></i></a>
+                    <a href="#" class="social"><i ><img src="./pic/gmail.png" alt="" height="25px" width="25px"> </i></a>
+                    <a href="#" class="social"><i ><img src="./pic/ig.jpg" alt="" height="25px" width="25px"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Đăng ký</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Đăng nhập</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i ><img src="./pic/f.png" alt="" height="25px" width="25px"></i></a>
+                    <a href="#" class="social"><i ><img src="./pic/gmail.png" alt="" height="25px" width="25px"> </i></a>
+                    <a href="#" class="social"><i ><img src="./pic/ig.jpg" alt="" height="25px" width="25px"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+         <a href="./asm2.html">  <button> Đăng nhập   </a>   
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Trang đăng nhập</h1>
+                    <p>Nhấp vào để đăng nhập</p>
+               <button class="ghost" id="signIn" >Đăng nhập</button> 
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Trang đăng ký</h1>
+                    <p>Nhấp vào làm đăng ký</p>
+                    <button class="ghost" id="signUp">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+        <script>
+        
+        const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const container = document.getElementById('container');
+    
+            signUpButton.addEventListener('click', () => {
+                container.classList.add('right-panel-active');
+            });
+            onclick 
+    
+            signInButton.addEventListener('click', () => {
+                container.classList.remove('right-panel-active');
+            });
+        
+        </script>
+    </div>
